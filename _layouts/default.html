@@ -6,7 +6,18 @@
     {% include header.html %}
     <main>
       <article>
-        <h2>This is a website</h2>>
+        <h2>This is a website</h2>
+        <div>
+          <button id="testButton" onclick="myFunction()">
+            PRESS ME!
+          </button>
+          <script>
+            function myFunction(){
+              let button = document.getElementById("testButton");
+              button.innerHTML("I GOT PRESSED!");
+            }
+          </script>
+        </div>
       </article>
       {% include footer.html %}
     </main>

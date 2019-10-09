@@ -19,7 +19,7 @@
 					success: function (names) {
 						var string = "";
 						$.each(names, function (index) {
-							string = string + "<h5><li>" + names[index] + "</li></h5>"
+							string = string + "<h5><li class='list-group-item'>" + names[index] + "</li></h5>"
 						});
 						$("#names").html(string);
 					},

@@ -1,32 +1,7 @@
 ---
 layout: default
 ---
-<script>
-	$(document).ready(function(){
-		$("#TestingButton").click(function () {
-			debugger;
-			$.ajax({
-				url: "https://enterdatatodatabase.azurewebsites.net/api/GetHttpRequest",
-				type: 'GET',
-				crossDomain: true,
-				headers: {
-					'Access-Control-Allow-Origin': 'https://enterdatatodatabase.azurewebsites.net/api/GetHttpRequest'
-				},
-				dataType: 'json', // added data types
-				success: function (names) {
-					var string = "";
-					$.each(names, function (index) {
-						string = string + "<h5>" + names[index] + "</h5>"
-					});
-					$("#names").html(string);
-				},
-				error: function () {
-					alert("No");
-				}
-			});
-		});
-	});
-</script>
+
 <h4>blog</h4>
 {% for post in site.posts %}
 		<time>{{ post.date | date: "%b %-d, %Y" }}</time>

@@ -7,18 +7,6 @@ layout: default
 		<time>{{ post.date | date: "%b %-d, %Y" }}</time>
 		<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 {% endfor %}
-<div class="text-center">
-	<h1 class="display-4">Welcome</h1>
-	<form method="post" action="https://enterdatatodatabase.azurewebsites.net/api/DatabaseCleanup?code=hDvKudnQIUMcFHN7pzNNqwmsM8oTjtcSo8oeOyw6CnIgCsQZ9zXPmg==">
-		First name:<br>
-		<input type="text" name="firstname" id="name" value="Diego">
-		<br>
-		<input type="submit" value="Submit">
-	</form>
-</div>
-<button id="TestingButton">Button2</button>
-<div id="names">
 
-</div>
 
 <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
